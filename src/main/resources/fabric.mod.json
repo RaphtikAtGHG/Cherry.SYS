@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "cherrysys",
+	"version": "${version}",
+	"name": "cherry.sys",
+	"description": "A simple client mod for Fabric. Mosty important to developers.",
+	"authors": [
+		"Raphtik@GHG"
+	],
+	"contact": {
+		"homepage": "https://raphtikatghg.github.com/main",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "Apache License Version 2.0",
+	"icon": "assets/cherrysys/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.github.concrafter20.cherrysys.Cherrysys"
+		]
+	},
+	"mixins": [
+		"cherrysys.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.20.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
